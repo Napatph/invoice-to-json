@@ -1,7 +1,9 @@
-import streamlit as st
+import os
 import json
 import base64
+import streamlit as st
 from openai import OpenAI
+
 
 # ================= CONFIG =================
 OPENAI_API_KEY = st.secrets.get("OPENAI_API_KEY") or os.environ.get("OPENAI_API_KEY")
